@@ -68,7 +68,7 @@ body {
 .cloud--large {
     height: 200px;
     width: 300px;
-    animation: cloudDrift 24~0s;
+    animation: cloudDrift 240s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -108,6 +108,8 @@ body {
 }
 
 .luigi {
+    position: absolute;
+    left: -100px;
     height: 100px;
     width: auto;
     animation: drive 4s ease-in;
@@ -118,7 +120,7 @@ body {
 
 .mario {
     position: absolute;
-    left: 0;
+    left: -100px;
     bottom: 0;
     z-index: 1;
     animation: drive 5s linear;
