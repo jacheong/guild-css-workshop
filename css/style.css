@@ -30,10 +30,9 @@ body {
     color: transparent;
     font-weight: 700;
     font-size: 64px;
-    /* letter-spacing: 5px; */
     width: 100%;
     text-transform: uppercase;
-    text-align: center; `
+    text-align: center;
 }
 
 .sky {
@@ -102,7 +101,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    animation: drive 5s ease;
+    animation: drive 5s linear;
     animation-fill-mode: forwards;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
@@ -114,7 +113,7 @@ body {
     }
 
     100% {
-        transform: translateX(1500px);
+        transform: translateX(2000px);
     }
 }
 
@@ -124,6 +123,6 @@ body {
     }
 
     100% {
-        transform: translateX(1500px);
+        transform: translateX(2000px);
     }
 }
