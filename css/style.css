@@ -41,27 +41,46 @@ body {
     position: relative;
 }
 
-.cloud {
-    height: 200px;
-    width: 300px;
+.cloud-1 {
     position: absolute;
     top: 0;
     left: 0;
-    animation: cloudDrift 30s;
+}
+
+.cloud-2 {
+    position: absolute;
+    top: 102px;
+    left: 200px;
+}
+
+.cloud-3 {
+    position: absolute;
+    top: 25px;
+    left: 600px;
+}
+
+.cloud-4 {
+    position: absolute;
+    top: 90px;
+    left: 800px;
+}
+
+.cloud--large {
+    height: 200px;
+    width: 300px;
+    animation: cloudDrift 24~0s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
 
+.cloud--medium {
+    height: 100px;
+    width: 300px;
+}
+
 .cloud--small {
-    height: 150px;
-    width: 200px;
-    position: absolute;
-    top: 102px;
-    left: -200px;
-    animation: cloudDrift 45s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
+    height: 100px;
+    width: 150px;
 }
 
 .grass {
@@ -101,6 +120,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 1;
     animation: drive 5s linear;
     animation-fill-mode: forwards;
     animation-delay: 0.2s;
@@ -119,7 +139,7 @@ body {
 
 @keyframes cloudDrift {
     0% {
-        transform: translateX(-500px);
+        transform: translateX(0);
     }
 
     100% {
